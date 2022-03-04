@@ -1,0 +1,18 @@
+.rodape {
+  text-align: center;
+  background: var(--cor-primaria);
+  padding: 0.5em 0.5em;
+  border-bottom: -10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--cor-contraste-claro);
+}
+
+@media screen and (max-width: 400px) {
+  .rodape {
+    font-size: 0.8rem;
+  }
+}
