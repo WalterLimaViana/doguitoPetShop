@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doguito Petshop | Criar conta</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/base/base.css">
+        <link rel="stylesheet" href="./assets/css/cadastro.css">
+        <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
+        <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+        <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+        <link rel="stylesheet" href="assets/css/login.css">
+        <link rel="stylesheet" href="assets/css/rodape.css">
+    </head>
+    <body>
+        <main class="container flex flex--coluna flex--centro">
+            <div class="cadastro-cabecalho">
+                <img src="./assets/img/doguito.svg" alt="Logo Doguito"
+                    class="cadastro-cabecalho__logo">
+                <h1 class="cadastro-cabecalho__titulo">PetShop</h1>
+            </div>
+            <section class="login__container">
+                <h1 class="login__titulo">Login</h1>
+                <div class="input-container">
+                    <input name="email" id="email" class="input"
+                        type="email" placeholder="Email"
+                        data-tipo="email" required>
+                    <label class="input-label" for="email">Email</label>
+                    <span class="input-mensagem-erro">Este campo não
+                        está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="senha" id="senha" class="input"
+                        type="password" placeholder="Senha"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[
+                        !@#$%^&*_=+-]).{6,12}$" title="A senha deve ser
+                        de 6 a 12 dígitos e conter pleo lenos uma letra
+                        minúscula, uma maiúscula, um número e não conter
+                        símbolos" data-tipo="senha" required>
+                    <label class="input-label" for="senha">Senha</label>
+                    <span class="input-mensagem-erro">Este campo não
+                        está válido</span>
+                </div>
+                <button class="botao">Entrar</button>
+            </section>
+        </main>
+
+        <script src="./js/app.js" type="module"></script>
+    </body>
+    <footer class="rodape">
+        <p>Copyright &copy; 2022 - Elaborado por <a
+                href="https://github.com/WalterLimaViana">Walter Lima</a></p>
+    </footer>
+</html>

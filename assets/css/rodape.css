@@ -2,8 +2,9 @@
   text-align: center;
   background: var(--cor-primaria);
   padding: 0.5em 0.5em;
-  border-bottom: -10px;
-  position: absolute;
+  justify-content: center;
+  position: fixed;
+  margin-top: 20rem;
   width: 100%;
   bottom: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
