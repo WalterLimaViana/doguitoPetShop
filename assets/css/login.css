@@ -14,3 +14,14 @@
   box-sizing: border-box;
   margin-bottom: 1rem;
 }
+
+.link__cadastro {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.link__cadastro:hover {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
