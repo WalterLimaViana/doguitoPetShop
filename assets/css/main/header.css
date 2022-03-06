@@ -1,0 +1,55 @@
+.cabecalho__container {
+  display: fixed;
+}
+.cabecalho__logo___imagem {
+  width: 5%;
+}
+.cabecalho__logo {
+  margin: 2rem;
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.cabecalho__titulo {
+  padding-left: 0.7rem;
+}
+
+.cabecalho__formulario {
+  position: relative;
+  margin-top: 0;
+  flex: 0 1 100%;
+  max-width: 25rem;
+  width: 40rem;
+  box-sizing: border-box;
+  margin-left: 1rem;
+}
+.cabecalho__formulario___busca {
+  width: 100%;
+}
+.cabecalho__botaoBusca {
+  position: absolute;
+  right: 5%;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 3px;
+  border: none;
+  background-color: #00abe9;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0 8px 0 9px;
+}
+.cabecalho__nav {
+  position: relative;
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.input__pesquisa {
+  display: block;
+  padding: 10px 50px 7px 11px;
+  line-height: 21px;
+  width: 80%;
+}
