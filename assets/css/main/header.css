@@ -16,40 +16,29 @@
   padding-left: 0.7rem;
 }
 
-.cabecalho__formulario {
-  position: relative;
-  margin-top: 0;
-  flex: 0 1 100%;
-  max-width: 25rem;
-  width: 40rem;
-  box-sizing: border-box;
-  margin-left: 1rem;
-}
-.cabecalho__formulario___busca {
-  width: 100%;
-}
-.cabecalho__botaoBusca {
-  position: absolute;
-  right: 5%;
-  top: 2px;
-  bottom: 2px;
-  border-radius: 3px;
-  border: none;
-  background-color: #00abe9;
-  font-size: 19px;
-  font-weight: 700;
-  padding: 0 8px 0 9px;
-}
-.cabecalho__nav {
-  position: relative;
-  display: flex;
-  text-align: center;
-  box-sizing: border-box;
+.cabecalho__busca___container {
+  float: left;
+  margin: 0.5rem;
 }
 
-.input__pesquisa {
-  display: block;
-  padding: 10px 50px 7px 11px;
-  line-height: 21px;
-  width: 80%;
+input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.cabecalho__busca___container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #00abe9;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.cabecalho__busca___container button:hover {
+  background: #0ebdfd;
 }

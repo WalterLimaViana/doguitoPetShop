@@ -30,18 +30,14 @@
                 <img src="./assets/img/doguito.svg" alt="Logo Doguito"
                     class="cabecalho__logo___imagem">
                 <h1 class="cabecalho__titulo">PetShop</h1>
-                <form action="" class="cabecalho__formulario">
-                    <label for="" class="cabecalho__formulario___busca"></label>
-                    <input class="input__pesquisa" type="text"
-                        placeholder="Buscar Produtos">
-                    <button class="cabecalho__botaoBusca">
-                        <span class="material-icons">
-                            search
-                        </span>
-                    </button>
-                </form>
+                <div class="cabecalho__busca___container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Buscar produto.."
+                            name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
                 <div class="cadastro">
-
                     <button class="cadastro__botao"><i class="fa fa-fw fa-user"></i>
                         Login</button>
                     <div class="cadastro__conteudo">
