@@ -1,0 +1,5 @@
+.cabecalho__container {
+  background: yellow;
+  display: fixed;
+  padding: 0.1em;
+}

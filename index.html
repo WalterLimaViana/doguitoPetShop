@@ -11,6 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/base/base.css">
+        <link rel="stylesheet" href="assets/css/cabecalho.css">
         <link rel="stylesheet" href="assets/css/main/header.css">
         <link rel="stylesheet" href="assets/css/main/botao-cadastro.css">
         <link rel="stylesheet" href="./assets/css/cadastro.css">
@@ -27,12 +28,11 @@
     <body>
         <header class="cabecalho__container">
             <div class="cabecalho__logo">
-                <img src="./assets/img/doguito.svg" alt="Logo Doguito"
+                <img src="./assets/img/doguito.svg" alt="Logo Doguito Petshop"
                     class="cabecalho__logo___imagem">
-                <h1 class="cabecalho__titulo">PetShop</h1>
                 <div class="cabecalho__busca___container">
                     <form action="/action_page.php">
-                        <input type="text" placeholder="Buscar produto.."
+                        <input type="text" placeholder="Buscar produto..."
                             name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
@@ -46,20 +46,16 @@
 
                     </div>
                 </div>
-                <nav class="cabecalho__nav">
-                    <ul class="cabecalho_lista">
-                        <li class="cabecalho__item"><a href=""
-                                class="cabecalho__link">Produtos</a></li>
-                        <li class="cabecalho__item"><a href=""
-                                class="cabecalho__link"></a>Lojas</li>
-                        <li class="cabecalho__item"><a href=""
-                                class="cabecalho__link"></a>Contato</li>
-                    </ul>
-                    <span class="material-icons">
-                        shopping_cart
-                    </span>
-                </nav>
-            </div>
+                <div class="cabecalho__menu">
+                    <a href="">Produtos</a>
+                    <a href="">Localização</a>
+                    <a href="">Contato</a>
+                    <a href=""><span class="material-icons">
+                            shopping_cart</span></a>
+                </div>
+            </header>
+        </div>
+        <main class="container flex flex--coluna flex--centro">
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
@@ -93,8 +89,6 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </header>
-        <main class="container flex flex--coluna flex--centro">
 
         </main>
 
