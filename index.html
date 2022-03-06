@@ -10,7 +10,6 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/base/base.css">
         <link rel="stylesheet" href="assets/css/cabecalho.css">
         <link rel="stylesheet" href="assets/css/main/header.css">
         <link rel="stylesheet" href="assets/css/main/botao-cadastro.css">
@@ -19,10 +18,15 @@
         <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
         <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
         <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+        <link rel="stylesheet" href="./assets/css/base/base.css">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet"
             href="assets/css/catalogo-produtos/catalogo-produtos.css">
         <link rel="stylesheet"
             href="assets/css/catalogo-produtos/catalogo-produto.css">
+        <link rel="stylesheet" href="assets/css/videos/video.css">
+        <link rel="stylesheet" href="assets/css/videos/videos.css">
         <link rel="stylesheet" href="assets/css/rodape.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
@@ -45,57 +49,68 @@
                     <button class="cadastro__botao"><i class="fa fa-fw fa-user"></i>
                         Login</button>
                     <div class="cadastro__conteudo">
-                        <a href="login.html">Entre na sua Conta</a>
-                        <a href="cadastro.html">Cadastre-se</a>
-
+                        <a class="cabecalho__menu___item" href="login.html">Entre
+                            na sua Conta</a>
+                        <a class="cabecalho__menu___item" href="cadastro.html">Cadastre-se</a>
                     </div>
                 </div>
                 <div class="cabecalho__menu">
-                    <a href="">Produtos</a>
-                    <a href="">Localização</a>
-                    <a href="">Contato</a>
-                    <a href=""><span class="material-icons">
+                    <a class="cabecalho__menu___item" href="">Produtos</a>
+                    <a class="cabecalho__menu___item" href="">Localização</a>
+                    <a class="cabecalho__menu___item" href="">Contato</a>
+                    <a class="cabecalho__menu___item" href=""><span
+                            class="material-icons">
                             shopping_cart</span></a>
                 </div>
             </header>
         </div>
         <main>
-            <section class="galeria__imagens">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
+            <div class="carousel__container">
+                <div id="myCarousel" class="carousel slide"
+                    data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0"
+                            class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="assets/img/4636308.jpg" style="width:100%">
-                        <div class="text">Adote um Pet hoje conosco!</div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="carousell__img"
+                                src="assets/img/4636308.jpg" alt="Los Angeles"
+                                style="width: 100%;">
+                        </div>
+
+                        <div class="item">
+                            <img class="carousell__img"
+                                src="assets/img/4767529.jpg" alt="Chicago"
+                                style="width: 100%;">
+                        </div>
+
+                        <div class="item">
+                            <img class="carousell__img"
+                                src="assets/img/5109465.jpg" alt="New york"
+                                style="width: 100%;">
+                        </div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="assets/img/5109465.jpg" style="width:100%">
-                        <div class="text">Mega Promoção de racões e petiscos</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="assets/img/4767529.jpg" style="width:100%">
-                        <div class="text">Promoção na ração premium</div>
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel"
+                        data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel"
+                        data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <br>
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </section>
-            <h2 class="subtitulo">Produtos Recomendados</h2>
+            </div>
+            <div class="subtitulo">Produtos Recomendados</div>
             <section class="produtos">
                 <div class="catalogo__produtos">
                     <div class="catalogo__produto">
@@ -177,14 +192,35 @@
                     </div>
                 </div>
             </section>
-
-
+            <div class="subtitulo">Vídeos sobre cuidados com os animais</div>
+            <section class="videos__container">
+                <div class="video">
+                    <iframe width="500" height="300"
+                        src="https://www.youtube.com/embed/bWNKes0xQwE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="500" height="300"
+                        src="https://www.youtube.com/embed/289WpKBnYrU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
         </main>
 
         <script src="./js/app.js" type="module"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'
             crossorigin='anonymous'></script>
         <script src="js/image-gallery.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body>
     <footer class="rodape">
         <p>Copyright &copy; 2022 - Elaborado por <a

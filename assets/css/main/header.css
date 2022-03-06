@@ -23,6 +23,7 @@ input[type="text"] {
   margin-top: 8px;
   font-size: 17px;
   border: none;
+  font-family: "Montserrat", sans-serif, "Pacifico", cursive;
 }
 
 .cabecalho__busca___container button {
@@ -43,8 +44,17 @@ input[type="text"] {
 .cabecalho__menu a {
   overflow: hidden;
   text-align: center;
-  margin: 0 2rem;
+  margin: 0 4.5rem;
+  color: var(--cor-contraste-escuro);
+  font-style: none;
   margin-top: 8px;
   padding: 6px;
   justify-content: space-between;
+}
+
+.cabecalho__menu___item:hover {
+  text-decoration: none;
+  color: var(--cor-contraste-mais-escuro);
+  font-weight: bold;
+  font-size: 1.01em;
 }

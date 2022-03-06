@@ -9,7 +9,8 @@ body {
 }
 
 .subtitulo {
-  margin: 0 1.7rem 2rem 2rem;
+  margin: 0 2rem 2rem 2rem;
+  padding-left: 1rem;
 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
