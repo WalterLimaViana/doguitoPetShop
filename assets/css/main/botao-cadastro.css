@@ -1,10 +1,10 @@
 .cadastro__botao {
   background-color: #00abe9;
   color: white;
-  padding: 3px 30px;
+  padding: 0.7rem;
   font-size: 16px;
   border: none;
-  width: 12rem;
+  width: 8rem;
   border-radius: 3px;
   text-align: center;
 }
