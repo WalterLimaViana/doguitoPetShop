@@ -1,0 +1,17 @@
+.catalogo__produtos {
+  max-width: 200px;
+  margin: 1rem auto;
+  margin-bottom: 10rem;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.catalogo__produto___imagem {
+  width: 100%;
+}
+.produtos {
+  display: flex;
+  flex-wrap: nowrap;
+}

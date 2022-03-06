@@ -1,0 +1,24 @@
+.catalogo__produto {
+  text-align: center;
+  flex: 1;
+  background: rgb(163, 199, 247);
+  border: 1px solid #969696;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.catalogo__produto___titulo {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+.catalogo__produto___descricao {
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.catalogo__produto___preco {
+  font-size: 1.5em;
+  padding: 0.6em;
+  font-weight: bold;
+}

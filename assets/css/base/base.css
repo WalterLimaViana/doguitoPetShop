@@ -2,40 +2,49 @@
 @import url(_variaveis.css);
 
 body {
-	background-color: var(--cor-secundaria);
-	color: var(--cor-contraste-escuro);
-	font-family: var(--fonte-familia-corpo);
-	overflow-x: hidden;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-contraste-escuro);
+  font-family: var(--fonte-familia-corpo);
+  overflow-x: hidden;
 }
 
-.container { 
-	padding-right: 1rem;
-	padding-left: 1rem;
+.subtitulo {
+  margin: 0 1.7rem 2rem 2rem;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 .flex--centro {
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex--coluna {
-	flex-direction: column;
+  flex-direction: column;
 }
 
-@media(min-width: 800px) {
+@media (min-width: 800px) {
   .container {
-		padding-right: 2.5rem;
-		padding-left: 2.5rem;	
-	}
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
 }
 
-@media(min-width: 1200px) {
-	.container {
-		padding-left: calc((100vw - 900px)/2);
-		padding-right: calc((100vw - 900px)/2);
-	}
+@media (min-width: 1200px) {
+  .container {
+    padding-left: calc((100vw - 900px) / 2);
+    padding-right: calc((100vw - 900px) / 2);
+  }
 }
