@@ -4,6 +4,14 @@
   background: rgb(163, 199, 247);
   border: 1px solid #969696;
 }
+
+.catalogo__produto___descricao,
+.catalogo__produto___preco,
+.catalogo__produto___titulo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--cor-contraste-mais-escuro);
+}
 .catalogo__produto___titulo {
   font-weight: bold;
   font-size: 1.2em;
@@ -19,4 +27,12 @@
   font-size: 1.5em;
   padding: 0.6em;
   font-weight: bold;
+}
+
+.catalogo__link:hover {
+  text-decoration: none;
+}
+
+.catalogo__produto:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

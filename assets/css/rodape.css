@@ -1,6 +1,7 @@
 .rodape {
   text-align: center;
   background: var(--cor-primaria);
+  color: var(--cor-contraste-claro);
   padding: 0.5em 0.5em;
   justify-content: center;
   position: fixed;
@@ -16,4 +17,13 @@
   .rodape {
     font-size: 0.8rem;
   }
+}
+
+.rodape__link {
+  color: var(--cor-contraste-claro);
+}
+
+.rodape__link:hover {
+  text-decoration: none;
+  color: var(--cor-contraste-escuro);
 }
