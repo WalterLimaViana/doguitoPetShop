@@ -1,0 +1,10 @@
+.servicos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.servicos__container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}

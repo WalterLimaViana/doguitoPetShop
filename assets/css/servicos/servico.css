@@ -1,0 +1,44 @@
+.servico {
+  flex: 1;
+  background: rgb(246, 250, 255);
+  border: 1px solid #969696;
+  margin: 2.5rem;
+  max-width: 250px;
+}
+.servico__imagem {
+  width: 100%;
+}
+.servico__titulo,
+.servico__descricao {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--cor-contraste-mais-escuro);
+  text-align: left;
+}
+
+.servico__titulo {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.servico__descricao {
+  font-size: 1em;
+  padding: 0.5em;
+}
+.servico__botao {
+  padding: 16px 40px;
+  position: sticky;
+  top: 90%;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  background-color: rgb(255, 136, 0);
+  color: rgb(246, 250, 255);
+  padding: 0.5em;
+  border-radius: 0.25em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.servico__botao:hover {
+  background-color: rgba(255, 136, 0, 0.815);
+}
