@@ -1,0 +1,16 @@
+.newsletter {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 650px;
+  margin: 7rem auto;
+  padding: 0.5rem;
+}
+.newsletter__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  color: var(--cor-contraste-mais-escuro);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

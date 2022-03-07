@@ -1,0 +1,12 @@
+.newsletter__titulo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.newsletter__botao {
+  margin: 0 5rem 2rem 5rem;
+  background: orange;
+  padding: 0.1rem 0.5em;
+  width: 100px;
+  color: var(--cor-contraste-claro);
+}
