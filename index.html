@@ -16,7 +16,8 @@
         <link rel="stylesheet" href="./assets/css/cadastro.css">
         <link rel="stylesheet" href="assets/css/main/imagem-gallery.css">
         <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
-        <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+        <link rel="stylesheet"
+            href="./assets/css/newsletter/inputs-newsletter.css">
         <link rel="stylesheet" href="./assets/css/componentes/botao.css">
         <link rel="stylesheet" href="./assets/css/base/base.css">
         <link rel="stylesheet"
@@ -265,60 +266,65 @@
                 </div>
             </section>
             <section class="newsletter">
-                <div class="newsletter__container">
+                <h2 class="newsletter__titulo">Receba nossas novidades no seu
+                    email</h2>
+                <form action="" class="formulario flex
+                    flex--coluna">
+                    <fieldset>
+                        <legend class="formulario__legenda">Cadastre seu email
+                            para receber promoções, dicas e novidades.</legend>
+                        <div class="input-container">
+                            <input name="nome" id="nome"
+                                class="input__newsletter"
+                                type="text" placeholder="Nome"
+                                data-tipo="nome" required>
+                            <label class="input-label" for="nome">Nome</label>
+                            <span class="input-mensagem-erro">Este campo não
+                                está válido</span>
+                            <div class="input-container">
+                                <input name="email" id="email"
+                                    class="input__newsletter"
+                                    type="email" placeholder="Email"
+                                    data-tipo="email" required>
+                                <label class="input-label" for="email">Email</label>
+                                <span class="input-mensagem-erro">Este campo não
+                                    está válido</span>
 
-                    <p class="newsletter__titulo">Receba nossas novidades no seu
-                        email</p>
-                    <p class="newsletter__descricao">Cadastre seu email para
-                        receber
-                        promoções, dicas e novidades.</p>
-                    <div class="input-container">
-                        <input name="nome" id="nome" class="input"
-                            type="text" placeholder="Nome" data-tipo="nome"
-                            required>
-                        <!-- O data-tipo é o que informa o tipo de mensagem de erro que será exibida  -->
-                        <label class="input-label" for="nome">Nome</label>
-                        <span class="input-mensagem-erro">Este campo não
-                            está válido</span>
-                    </div>
-                    <div class="input-container">
-                        <input name="email" id="email" class="input"
-                            type="email" placeholder="Email"
-                            data-tipo="email" required>
-                        <label class="input-label" for="email">Email</label>
-                        <span class="input-mensagem-erro">Este campo não
-                            está válido</span>
-                    </div>
-                    <button class="newsletter__botao">Cadastrar</button>
-                </div>
-            </section>
-            <div class="subtitulo">Localização</div>
-            <section class="localizacao">
-                <a name="localizacao"></a>
-                <iframe class="mapa"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.48157466515!2d-46.733620284562406!3d-23.658730271081318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce519e3ad22cb1%3A0x8e4099959d350d!2sR.%20Mourisca%20-%20Jardim%20Sao%20Luis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005814-190!5e0!3m2!1sen!2sbr!4v1646612902484!5m2!1sen!2sbr"
-                    width="100%" height="300" style="border:0;"
-                    allowfullscreen="" loading="lazy"></iframe>
-            </section>
-        </main>
+                                <button class="botao">Cadastrar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                <div class="subtitulo">Localização</div>
+                <section class="localizacao">
+                    <a name="localizacao"></a>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.48157466515!2d-46.733620284562406!3d-23.658730271081318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce519e3ad22cb1%3A0x8e4099959d350d!2sR.%20Mourisca%20-%20Jardim%20Sao%20Luis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005814-190!5e0!3m2!1sen!2sbr!4v1646612902484!5m2!1sen!2sbr"
+                        width="100%" height="300" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </section>
+                <div class="subtitulo">Contato</div>
+                section.contaato>div.contato__container>h2.contato__titulo+p.contato__descricao
+            </main>
 
-        <script src="./js/app.js" type="module"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'
-            crossorigin='anonymous'></script>
-        <script src="js/image-gallery.js"></script>
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </body>
-    <footer class="rodape">
-        <p>Copyright &copy; 2022 - Elaborado por <a
-                class="rodape__link" href="https://github.com/WalterLimaViana">Walter
-                Lima</a> -
-            Imagens de <a
-                class="rodape__link"
-                href='https://br.freepik.com/fotos-vetores-gratis/modelo'>Modelo
-                vetor
-                criado por freepik - br.freepik.com</a> </p>
-    </footer>
-</html>
+            <script src="./js/app.js" type="module"></script>
+            <script src='https://kit.fontawesome.com/a076d05399.js'
+                crossorigin='anonymous'></script>
+            <script src="js/image-gallery.js"></script>
+            <script
+                src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </body>
+        <footer class="rodape">
+            <p>Copyright &copy; 2022 - Elaborado por <a
+                    class="rodape__link"
+                    href="https://github.com/WalterLimaViana">Walter
+                    Lima</a> -
+                Imagens de <a
+                    class="rodape__link"
+                    href='https://br.freepik.com/fotos-vetores-gratis/modelo'>Modelo
+                    vetor
+                    criado por freepik - br.freepik.com</a> </p>
+        </footer>
+    </html>
