@@ -44,7 +44,7 @@ input[type="text"] {
 .cabecalho__menu a {
   overflow: hidden;
   text-align: center;
-  margin: 0 4.5rem;
+  margin: 0 1.5rem;
   color: var(--cor-contraste-escuro);
   font-style: none;
   margin-top: 8px;

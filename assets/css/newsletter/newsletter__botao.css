@@ -1,0 +1,32 @@
+.botao {
+  display: block;
+  background-color: var(--cor-primaria);
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 1rem;
+  margin: 1rem auto 1rem;
+  max-width: 15rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: var(--cor-contraste-claro);
+  font-size: var(--fonte-tamanho-botao);
+  align-self: center;
+  text-align: center;
+}
+
+.botao-simples {
+  border: none;
+  background-color: unset;
+}
+
+.botao-simples--adicionar {
+  color: var(--cor-primaria);
+}
+
+.botao-simples--excluir {
+  color: var(--cor-aviso);
+}
+
+.botao-simples--editar {
+  color: var(--cor-sucesso);
+}
