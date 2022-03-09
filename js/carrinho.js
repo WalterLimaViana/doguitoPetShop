@@ -1,44 +1,44 @@
 const itens = [
     {
         id: 0,
-        nome: 'Racão 3kg PSD Sabor Salmão',
+        nome: 'Racão 3kg CatPSD Sabor Salmão',
         img: '../assets/img/pets-food-bag-mockup-leaned.jpg',
-        preco: 'R$50,00',
+        preco: 'R$57,00',
         quantidade: 0
     },
     {
         id: 1,
-        nome: 'Racão 3kg PSD Sabor Cordeiro',
+        nome: 'Racão 3kg CatPSD Sabor Cordeiro',
         img: '../assets/img/pets-food-bag-mockup-leaned.jpg',
-        preco: 'R$50,00',
+        preco: 'R$55,00',
         quantidade: 0
     },
     {
         id: 2,
-        nome: 'Racão 3kg PSD Sabor Carne',
+        nome: 'Racão 3kg CatPSD Sabor Carne',
         img: '../assets/img/pets-food-bag-mockup-leaned.jpg',
         preco: 'R$50,00',
         quantidade: 0
     },
     {
         id: 3,
-        nome: 'Racão 3kg PSD Sabor Salmão',
+        nome: 'Racão 3kg CatPSD Sabor Frango',
         img: '../assets/img/pets-food-bag-mockup-leaned.jpg',
-        preco: 'R$50,00',
+        preco: 'R$45,00',
         quantidade: 0
     },
     {
         id: 4,
-        nome: 'Racão 3kg PSD Sabor Salmão',
+        nome: 'Racão 3kg DogPSD Sabor Carne',
         img: '../assets/img/pets-food-bag-mockup-leaned.jpg',
-        preco: 'R$50,00',
+        preco: 'R$52,00',
         quantidade: 0
     },
     {
         id: 5,
-        nome: 'Racão 3kg PSD Sabor Salmão',
+        nome: 'Racão 3kg DogPSD Sabor Frango',
         img: '../assets/img/pets-food-bag-mockup-leaned.jpg',
-        preco: 'R$50,00',
+        preco: 'R$51,50',
         quantidade: 0
     }
 
@@ -50,9 +50,9 @@ inicializarLoja = () => {
         containerProdutos.innerHTML += `
         <div class="produto">
         <img class="produto__imagem" src= `+ val.img + ` />
-        <p> `+ val.nome + `</p>
-        <p> ` + val.preco + `</p> 
-        <a key="`+ val.id + `" href="#">Adicione ao carrinho</a>                                          
+        <p class="produtos__texto"> `+ val.nome + `</p>
+        <p class="produtos__texto"> ` + val.preco + `</p> 
+        <a class="produtos__texto" key="`+ val.id + `" href="#">Adicione ao carrinho</a>                                          
         </div>
          `
     })
@@ -66,7 +66,8 @@ atualizarCarrinho = () => {
     itens.map((val) => {
         if (val.quantidade > 0) {
             containerCarrinho.innerHTML += `
-        <p>` + val.quantidade + `</p>
+        
+        <p>`+ val.nome + `: ` + val.quantidade + `</p>
         <hr>
          `;
         }
@@ -85,13 +86,3 @@ for (var i = 0; i < links.length; i++) {
     })
 }
 
-var links = document.getElementsByTagName('a');
-
-for (var i = 0; i < links.length; i--) {
-    links[i].addEventListener("click", function () {
-        let key = this.getAttribute('key');
-        itens[key].quantidade--;
-        atualizarCarrinho();
-        return false;
-    })
-}

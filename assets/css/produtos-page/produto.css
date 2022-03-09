@@ -6,15 +6,26 @@
   margin: 5rem auto;
   padding: 0 2%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
 #carrinho {
-  display: flex;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 
 .produto {
   width: 33, 3%;
-  padding: 0 20px;
+  margin: 0 1rem;
+  padding: 5px 2px;
+  border: 1px solid var(--cor-contraste-mais-escuro);
+}
+
+.produtos__texto {
+  padding: 0.5rem;
+}
+
+.subtitulo--produtos {
+  margin-top: 4rem;
 }
