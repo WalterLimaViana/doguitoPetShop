@@ -5,3 +5,8 @@
   padding: 0.1em;
   font-family: "Montserrat", sans-serif, "Pacifico", cursive;
 }
+@media screen and (max-width: 820px) {
+  .cabecalho__container {
+    flex-direction: column;
+  }
+}

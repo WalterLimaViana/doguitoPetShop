@@ -41,6 +41,11 @@ body {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
   }
+  .subtitulo {
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
