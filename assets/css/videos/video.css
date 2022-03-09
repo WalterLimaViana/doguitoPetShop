@@ -1,10 +1,15 @@
 .video {
   max-width: 500px;
 }
+.videos__video {
+  width: 500px;
+  height: 300px;
+}
 
 @media screen and (max-width: 820px) {
-  .video {
-    width: 20%;
-    height: 20%;
+  .videos__video {
+    width: 300px;
+    height: 150px;
+    margin: 4% 10%;
   }
 }

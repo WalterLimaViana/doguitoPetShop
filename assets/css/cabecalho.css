@@ -1,6 +1,6 @@
 @import url(_reset.css);
 .cabecalho__container {
-  background: yellow;
+  background: rgb(252, 252, 98);
   display: fixed;
   padding: 0.1em;
   font-family: "Montserrat", sans-serif, "Pacifico", cursive;

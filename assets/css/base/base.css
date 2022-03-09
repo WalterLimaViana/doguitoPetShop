@@ -1,21 +1,26 @@
 @import url(_reset.css);
 @import url(_variaveis.css);
+html {
+  height: 100%;
+  min-height: 100%;
+}
 
 body {
   background-color: var(--cor-secundaria);
   color: var(--cor-contraste-escuro);
   font-family: var(--fonte-familia-corpo);
   overflow-x: hidden;
+  padding-bottom: 60px;
 }
 
 .subtitulo {
-  margin: 0 2rem 2rem 2rem;
   padding-left: 1rem;
-
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1.7rem;
   font-weight: bold;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .container {
@@ -42,9 +47,9 @@ body {
     padding-left: 2.5rem;
   }
   .subtitulo {
-    margin: 0 auto;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.7rem;
+    margin: 0 2rem 2rem 2rem;
+    text-align: left;
   }
 }
 

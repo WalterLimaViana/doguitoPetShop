@@ -3,6 +3,7 @@
   background: var(--cor-primaria);
   color: var(--cor-contraste-claro);
   padding: 0.5em 0.5em;
+  padding-bottom: 0%;
   justify-content: center;
   position: fixed;
   margin-top: 20rem;
@@ -13,9 +14,13 @@
   color: var(--cor-contraste-claro);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .rodape {
     font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
   }
 }
 

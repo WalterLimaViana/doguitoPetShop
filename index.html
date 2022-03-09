@@ -46,7 +46,8 @@
                 <img src="./assets/img/doguito.svg" alt="Logo Doguito Petshop"
                     class="cabecalho__logo___imagem">
                 <div class="cabecalho__busca___container">
-                    <form action="/action_page.php">
+                    <form class="cabecalho__busca__form"
+                        action="/action_page.php">
                         <input type="text" placeholder="Buscar produto..."
                             name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
@@ -250,7 +251,7 @@
             <div class="subtitulo">Vídeos sobre cuidados com os animais</div>
             <section class="videos__container">
                 <div class="video">
-                    <iframe width="500" height="300"
+                    <iframe class="videos__video"
                         src="https://www.youtube.com/embed/bWNKes0xQwE"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write;
@@ -258,7 +259,7 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="500" height="300"
+                    <iframe class="videos__video"
                         src="https://www.youtube.com/embed/289WpKBnYrU"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write;
@@ -305,7 +306,12 @@
                         allowfullscreen="" loading="lazy"></iframe>
                 </section>
                 <div class="subtitulo">Contato</div>
-                section.contaato>div.contato__container>h2.contato__titulo+p.contato__descricao
+                <section class="contaato">
+                    <div class="contato__container">
+                        <h2 class="contato__titulo"></h2>
+                        <p class="contato__descricao"></p>
+                    </div>
+                </section>
             </main>
 
             <script src="./js/app.js" type="module"></script>
