@@ -3,7 +3,7 @@
   background: var(--cor-primaria);
   color: var(--cor-contraste-claro);
   padding: 0.5em 0.5em;
-  padding-bottom: 0%;
+
   justify-content: center;
   position: fixed;
   margin-top: 20rem;
