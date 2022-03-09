@@ -8,3 +8,9 @@
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+
+@media screen and (max-width: 820px) {
+  .servicos {
+    display: block;
+  }
+}

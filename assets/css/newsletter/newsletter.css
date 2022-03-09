@@ -18,3 +18,11 @@
 .input-label--newsletter {
   padding: 5rem;
 }
+@media screen and (max-width: 820px) {
+  .newsletter {
+    display: block;
+    margin: 1rem auto;
+    width: 350px;
+    padding: 0.5rem;
+  }
+}
