@@ -1,6 +1,6 @@
 .botao {
   display: block;
-  background-color: var(--cor-primaria);
+  background-color: #00abe9;
   border-radius: 7px;
   width: 100%;
   margin-top: 1rem;
@@ -15,7 +15,9 @@
 
 .botao-simples {
   border: none;
-  background-color: unset;
+}
+.botao:hover {
+  background-color: #0ebdfd;
 }
 
 .botao-simples--adicionar {

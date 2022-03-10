@@ -1,7 +1,7 @@
 .rodape {
   text-align: center;
-  background: var(--cor-primaria);
-  color: var(--cor-contraste-claro);
+  background: rgb(98, 208, 252);
+  color: var(----cor-contraste-mais-escuro);
   padding: 0.5em 0.5em;
 
   justify-content: center;
@@ -11,7 +11,14 @@
   bottom: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: var(--cor-contraste-claro);
+}
+.rodape__link {
+  color: var(--cor-contraste-mais-escuro);
+}
+
+.rodape__link:hover {
+  text-decoration: none;
+  color: var(--cor-contraste-escuro);
 }
 
 @media screen and (max-width: 800px) {
@@ -22,13 +29,4 @@
     width: 100%;
     height: 60px;
   }
-}
-
-.rodape__link {
-  color: var(--cor-contraste-claro);
-}
-
-.rodape__link:hover {
-  text-decoration: none;
-  color: var(--cor-contraste-escuro);
 }
