@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="assets/css/main/botao-cadastro.css">
         <link rel="stylesheet" href="./assets/css/cadastro.css">
         <link rel="stylesheet" href="./assets/css/base/base.css">
-        <link rel="stylesheet" href="assets/css/produtos-page/produto.css">
+        <link rel="stylesheet" href="assets/css/produtos-lista/racao.css">
         <link rel="stylesheet" href="assets/css/rodape.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
@@ -58,24 +58,39 @@
             </header>
         </div>
         <main>
-            <section class="produtos__container">
-                <h2 class="subtitulo subtitulo--produtos">Rações</h2>
-                <div id="produtos">
+            <section>
+                <div class="produto_descrição">
+                    <div>
+
+                    </div>
+                    <div>
+                        <div class="quantidade__container">
+                            <div class="quantidade">
+                                <button class="quantidade_botão"
+                                    onclick="somar()">+</button>
+                                <h2 id="quantidade"></h2>
+                                <button class="quantidade_botão"
+                                    onclick="diminuir()">-</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="carrinhoLista">
-                <div class="carrinhoListaDetalhes">
-                    <h3 class="subtitulo subtitulo-produtos">Produtos</h3>
-                    <div id="carrinho"></div>
-                </div>
-            </section>
+
+
+
+
+
+
+
 
         </main>
 
         <script src="./js/app.js" type="module"></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'
             crossorigin='anonymous'></script>
-        <script src="js/carrinho.js"></script>
+        <script src="js/quantidade.js">            
+            </script>
     </body>
     <footer class="rodape">
         <p>Copyright &copy; 2022 - Elaborado por <a
