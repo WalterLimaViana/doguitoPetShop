@@ -94,8 +94,17 @@
   }
   .produto__container___imagem {
     display: block;
-    width: 100%;
-    margin: 2.5rem;
+    width: 80%;
+    margin: 2.5rem auto;
     align-items: center;
+  }
+
+  .produto__descricao {
+    display: block;
+    width: 80%;
+    padding: 0.5rem auto;
+    margin: 0.5rem auto;
+    text-align: justify;
+    /* align-items: center; */
   }
 }
