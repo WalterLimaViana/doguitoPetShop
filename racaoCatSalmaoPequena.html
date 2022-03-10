@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Doguito Petshop | Produtos</title>
+        <title>Doguito Petshop | Racão 3kg CatPSD Sabor Salmão</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
             rel="stylesheet">
@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="assets/css/main/header.css">
         <link rel="stylesheet" href="assets/css/main/botao-cadastro.css">
         <link rel="stylesheet" href="./assets/css/cadastro.css">
+        <link rel="stylesheet" href="./assets/css/componentes/botao.css">
         <link rel="stylesheet" href="./assets/css/base/base.css">
         <link rel="stylesheet" href="assets/css/produtos-lista/racao.css">
         <link rel="stylesheet" href="assets/css/rodape.css">
@@ -59,19 +60,47 @@
         </div>
         <main>
             <section>
-                <div class="produto_descrição">
-                    <div>
-
+                <div class="produto_container">
+                    <div class="produto__container___um">
+                        <div class="produto__container___imagem">
+                            <img class="produto__imagem"
+                                src="assets/img/pets-food-bag-mockup-leaned.jpg"
+                                alt="Ração 3kg">
+                            <h2 class="produto__titulo">Racão 3kg CatPSD Sabor
+                                Salmão</h2>
+                        </div>
+                        <div class="produto__descricao">
+                            <p class="produto__informacoes___titulo">Informações</p>
+                            <ul class="produto__lista">
+                                <li class="produto__item">Auxilia no controle do
+                                    peso;</li>
+                                <li class="produto__item">Contribui para o
+                                    controle das bolas de pelos;</li>
+                                <li class="produto__item">Essencial para o
+                                    coração e olhos mais saudáveis;</li>
+                                <li class="produto__item">Indicado especialmente
+                                    para gatos adultos castrados;</li>
+                                <li class="produto__item">Com minerais
+                                    balanceados, promove o controle do pH e a
+                                    saúde do trato urinário;</li>
+                                <li class="produto__item">Livre de corantes e
+                                    aromatizantes artificiais;</li>
+                                <li class="produto__item">Promove fezes firmes e
+                                    com odor reduzido.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
+                    <div class="produto__container___dois">
                         <div class="quantidade__container">
                             <div class="quantidade">
-                                <button class="quantidade_botão"
+                                <button class="quantidade__botao"
                                     onclick="somar()">+</button>
                                 <h2 id="quantidade"></h2>
-                                <button class="quantidade_botão"
+                                <button class="quantidade__botao"
                                     onclick="diminuir()">-</button>
                             </div>
+                            <p class="produto__valor">R$ 55,00</p>
+                            <button class="botao">Comprar</button>
                         </div>
                     </div>
                 </div>
