@@ -1,0 +1,10 @@
+.quantidade {
+  display: flex;
+  margin: 5rem;
+}
+.quantidade_botão {
+  padding: 0 0.6rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
